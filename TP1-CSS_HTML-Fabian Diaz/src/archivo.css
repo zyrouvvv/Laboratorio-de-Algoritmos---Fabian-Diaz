@@ -1,0 +1,316 @@
+@font-face{
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: "SpaceGrotesk";
+    src: url("../fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "SpaceGrotesk";
+    src: url("../fonts/SpaceGrotesk-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #0f172a;
+    color: #f8fafc;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(15, 23, 42, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.Nombre a{
+    text-decoration: none;
+    color: #10b981;
+    font-size: 29px;
+    font-family: 'SpaceGrotesk', sans-serif;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.Nombre a:hover{
+    color: white;
+    transform: scale(1.05);
+}
+
+.header nav a{
+    text-decoration: none;
+    color: #f8fafc;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+    padding-bottom: 5px;
+}
+
+.header nav a:hover{
+    color: #10b981;
+
+    border-bottom: 2px solid #10b981;
+
+    transform: scale(1.05);
+}
+
+main{
+    width: 100%;
+    overflow: hidden;
+}
+
+section{
+    min-height: auto;
+    padding: 130px 8% 80px;
+}
+.SobreMi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.FotoPerfil{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 5px solid #10b981;
+    object-fit: cover;
+    object-position: center top;
+}
+
+
+.TituloSobreMi{
+    font-size: 48px;
+    padding-bottom: 50px;
+    font-family: 'SpaceGrotesk', sans-serif;
+}
+
+.TextosobreMi{
+    max-width: 850px;
+    font-size: 20px;
+    padding-top: 75px;
+    color: #94a3b8;
+}
+
+.Habilidades h2{
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 50px;
+    font-family: 'SpaceGrotesk', sans-serif;
+}
+
+.conteiner-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.item{
+    width: 260px;
+    height: 600px;
+    background: #1e293b;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 35px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.item h3{
+    font-size: 19px;
+    color: #94a3b8;
+}
+
+.item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+}
+
+.item figure{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img{
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.NombreHabilidad h2{
+    margin-top: 20px;
+    font-size: 22.5px;
+}
+
+
+.Proyectos h2{
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 50px;
+    font-family: 'SpaceGrotesk', sans-serif;
+}
+
+.MisProyectos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+}
+
+.itemsP{
+    background: #1e293b;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: 0.4s;
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+.itemsP:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.itemsP figure{
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.itemsP img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.4s;
+    background: #111827
+}
+
+.itemsP:hover img{
+    transform: scale(1.08);
+}
+
+.info-item{
+    padding: 25px;
+}
+
+.info-item h2{
+    margin-bottom: 15px;
+    font-size: 25.6px;
+}
+
+.info-item p{
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.info-item button{
+    border: none;
+    outline: none;
+    background: #10b981;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.info-item button:hover{
+    background: #059669;
+    transform: scale(1.05);
+}
+
+footer{
+    background: #0f1522;
+    padding: 25px 8%;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer h3{
+    font-size: 24px;
+    font-family: 'SpaceGrotesk', sans-serif;
+}
+
+footer p{
+    color: #94a3b8;
+}
+
+.correo{
+    text-decoration: none;
+    color: #f8fafc;
+    transition: 0.3s;
+}
+
+.correo:hover{
+    color: #10b981;
+}
+
+.redes{
+    display: flex;
+    gap: 20px;
+}
+
+.redes a{
+    width: 50px;
+    height: 50px;
+    background: #1e293b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 21px;
+    transition: 0.3s;
+}
+
+.redes a:hover{
+    background: #10b981;
+    transform: translateY(-5px);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #10b981;
+  margin: 100px;
+}
